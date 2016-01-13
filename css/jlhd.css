@@ -1,0 +1,177 @@
+
+html{
+	font-size: 62.5%;
+}
+html,body,.container{
+	width:100%;height:100%;display: -webkit-box;-webkit-box-flex: 1;
+	position:relative;
+	background: #EEEEF0;
+}
+header{
+	width:100%;
+	height: 50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	padding:0 10px;
+}
+header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 1.5rem;
+	color:#fff;
+	line-height: 50px;
+}
+header a img{
+	width:20px;
+	margin-top: 16px;
+}
+ul{
+	width:100%;
+	height:50px;
+	position:absolute;
+	top:50px;
+	left:0;
+	line-height: 50px;
+	display: -webkit-box;
+	background:#fff;
+	
+	}
+	ul li{
+		-webkit-box-flex:1;
+		line-height: 50px;
+		text-align: center;
+		
+}
+ul li:hover{
+	border-bottom: 2px solid #00CB4B;
+}
+.container>section{
+	width:100%;
+	height:100%;
+	left:100%;
+	position: absolute;
+	top:100px;
+	-webkit-transition:transform .5s;
+	}
+.current{
+	transform:translate(-100%,0);
+	}
+
+ .section{
+ 	
+ 	width:100%;
+ 	background: #eeeef0;
+ }
+.section dl{
+	width:100%;
+	display: -webkit-box;
+	padding:10px 4%;
+	border-bottom: 1px solid #d9d9da;
+	border-top: 1px solid #d9d9da;
+	margin-bottom: 1.5%;
+	background: #fff;
+	}
+.section dl dt{
+	width:10%;
+	height: 6%;
+	margin-right: 10px;
+}
+.section img{
+	width:100%;
+	height:100%;
+	display: block;
+}
+.section dl dd{
+	-webkit-box-flex: 1;
+	
+}
+.section dl dd p:first-child{
+	color: #00cd4e ;
+	font-size: 14px;
+	
+}
+.section dl dd p:last-child{
+	font-size: 11px;
+}
+
+.two {
+	width:100%;
+	background: #eeeef0;
+}
+.two p{
+	width:130px;
+	margin: 0 auto;
+	padding:5px 0;
+	text-align: center;
+	font-size: 1.1rem;
+	background: rgba(0,0,0,0.2);
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.two dl{
+	width:90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: -webkit-box;
+}
+.two dl dt{
+ 	width:47px;
+ 	height:47px;
+ }
+.two dl dt img{
+ 	width:100%;
+ }
+ .two dl dd{
+ 	-webkit-box-flex: 1;
+ }
+.two dl:nth-child(2) dd p{
+
+	width:90%;
+	-webkit-border-image:url(../icon/90后信用-31.png)41 25 47 31/13px;
+}
+.two dl:nth-child(3) dd p{
+	
+	width:90%;
+	-webkit-border-image:url(../icon/90后信用-32.png)41 25 47 31/13px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

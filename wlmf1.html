@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>我来免费</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap-fileinput/4.2.7/css/fileinput.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/wlmf1.css" />
+    <![endif]-->
+   
+    </style>
+</head>
+<body>
+<div class="container-fluid" style="padding: 0!important;">
+    <header class="header">
+        <a href="javascript:history.go(-1);" ><img src='icon/backButton.png'></a>
+        <p>我来免费</p>
+        <a href="###"><img src='icon/more.png' alt=""></a>
+    </header>
+
+    <section class="m-t-10">
+        <div class="col-lg-12 ">
+            <form class="form-horizontal" id="publishFree" action="myFree/publishFree.do" method="post"
+                  enctype="multipart/form-data"
+                  data-bv-message="输入值不合法"
+                  data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                  data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                  data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+               <h6>主题 <input type="text" name="" id="" value="" /> </h6>   
+               <div class="time">
+			 		<label for="startTime">开始
+                        <input type='text' id="startTime" name="startTime" required>
+                    </label>
+                    <label for="startTime">结束
+                        <input type='text'  id="endTime" name="endTime" required>
+                    </label>
+                   <label for=""> 地 &nbsp; &nbsp; &nbsp; &nbsp;点  
+			 			<select id="sel1"></select> <select id="sel2"></select>
+			 	   </label>
+			 		<!--<label for="">地点 
+			 			<select id="sel1" ></select><select id="sel2"></select>
+			 		</label>-->
+			 	</div>
+                <ul>
+			 		<li>活动详情 <input type="text" name="" id="" value="" /></li>
+			 		<li>详细地址 <input type="text" name="" id="" value="" /></li>
+			 		<li>联系方式 <input type="text" name="" id="" value="" /></li>
+			 	</ul>
+			 	<div class="photo_up">
+			 	  	   <div class="uploading_btn">
+			 	  	   	    <input type="file" name="" id="" value="" >
+			 	  	   </div>
+			 	  	   <h2>上传照片</h2>
+			 	</div><!--photo-->
+			 	<p>限定人数<input type="number" name="" id="peopleNumber" value="" />人</p>
+			 	<a href="axfbcg.html"><input type="submit" name="" id="button" value="发布" /></a> 
+                </div>
+                
+               <div class="add">
+               
+               </div>
+            </form>
+        </div>
+    </section>
+
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/moment.js/2.10.6/moment.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<script src="http://cdn.bootcss.com/moment.js/2.10.6/locale/zh-cn.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-validator/0.5.3/js/language/zh_CN.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-fileinput/4.2.7/js/fileinput.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap-fileinput/4.2.7/js/fileinput_locale_zh.min.js"></script>
+<script type="text/javascript">
+    /*图片上传*/
+    $("#imgIntroduction").fileinput({
+        language: 'zh',
+        uploadUrl: 'myFree/requestThingImgs.do',//单独上传这些图片的路径
+        uploadExtraData: {kvId: '10'},
+        allowedFileExtensions: ['jpg', 'png'],
+        overwriteInitial: false,
+        maxFileSize: 50,
+        maxFilesNum: 10,
+    });
+    $(document).ready(function () {
+
+     var data = {'car':[
+     {'brand':'选择省份','param':[
+        {'name':'选择城市'},
+      ]},
+      {'brand':'北京','param':[
+      
+        {'name':'西城'},
+        {'name':'东城'},
+        {'name':'朝阳'},
+        {'name':'海淀'}
+      ]},
+      {'brand':'上海','param':[
+        {'name':'徐汇'},
+        {'name':'黄埔'},
+        {'name':'长宁'}
+      ]},
+      
+    ]};
+    //console.log(data);
+    var $sel1 = $('#sel1');
+    var $sel2 = $('#sel2');
+    var $sel3 = $('#sel3'); 
+    function select_1(n){//构造第一个select
+      var n = n || 0;
+      var html = '';
+      var len = data.car.length;
+      for(var i = 0; i < len; i++){
+        if(i == n){
+          html += '<option value="' + data.car[i].brand + '" selected="selected">' + data.car[i].brand + '</option>';
+        }else{
+          html += '<option value="' + data.car[i].brand + '">' + data.car[i].brand + '</option>';
+        }
+      }
+      $sel1.html(html);
+      select_2(n);
+    }
+    function select_2(n,q){//构造第二个select
+      var n = n || 0;
+      var q = q || 0;
+      var html = '';
+      var len = data.car[n].param.length;
+      for(var i = 0; i < len; i++){
+        if(i == q){
+          html += '<option value="' + data.car[n].param[i].name + '" selected="selected">' + data.car[n].param[i].name + '</option>';
+        }else{
+          html += '<option value="' + data.car[n].param[i].name + '" >' + data.car[n].param[i].name + '</option>';
+        }
+      }
+      $sel2.html(html);
+    }
+    select_1();//初始化
+    $sel1.change(function(){//绑定第一个select
+      var n = $sel1.find(':selected').index();
+      select_1(n);
+    });
+    $sel2.change(function(){//绑定第二个select
+      var n = $sel1.find(':selected').index();
+      var q = $sel2.find(':selected').index();
+      select_2(n,q);
+    });
+        
+        
+        
+        /*时间选择器*/
+        $('#startTime').datetimepicker({
+         //  format: moment().format("YYYY, MMMM  ,dddd, h:mm"),
+		//Custom: moment().format("YYYY,MMMM,dddd,h:mm"),
+            locale: moment().local('zh-cn'),
+            showClose: true,
+            minDate: moment(),
+           format: 'YYYY-MM-mm-dddd, HH:mm'
+           
+        });
+        $('#endTime').datetimepicker({
+            locale: moment().local('zh-cn'),
+            showClose: true,
+            minDate: moment(),
+            useCurrent: false //Important! See issue #1075
+        });
+        /*$("#startTime").on("dp.change", function (e) {
+            $('#endTime').data("DateTimePicker").minDate(e.date);
+        });
+        $("#endTime").on("dp.change", function (e) {
+            $('#startTime').data("DateTimePicker").maxDate(e.date);
+        });
+        $('#publishFree').bootstrapValidator();*/
+    })
+    ;
+</script>
+</body>
+
+</html>

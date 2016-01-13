@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
+		<meta name="x5-page-mode" content="app">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<title></title>cd
+		<link rel="stylesheet" href="css/reset.css" />
+		<!--<link rel="stylesheet" href="css/Exchange_interaction.css" />-->
+	</head>
+	<body>
+<style type="text/css">
+html{
+	font-size: 62.5%;
+}
+html,body,.container{
+	width: 100%;
+	height:100%;
+	overflow-x:hidden;
+
+}
+header{
+	width:100%;
+	height: 50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	padding:0 10px;
+	font-weight: bold;
+	position: fixed;
+	top:0;
+	z-index: 99;
+	line-height: 50px;
+}
+header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 1.5rem;
+	color:#fff;
+	line-height: 50px;
+}
+header a img{
+	width:20px;
+	margin-top:16px;
+}
+#con{
+	width:100%;
+	height:84%;
+	position: absolute;
+	top:50px;
+	bottom:0;
+	 scroll="no"
+}
+ul{
+	width:100%;
+	height:42px;
+	background: #FFFFFF;
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	text-align: center;
+	line-height: 42px;
+}
+ul li{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	display: block;
+}
+ul li:nth-child(2){
+	border-left: 1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+#tagContent{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+#tagContent>div{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background: #f3f3f3;
+}
+/*意见反馈--1--*/	
+.one{padding-top: 20px;
+z-index: 99;
+}
+.one p{
+	width:130px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 15px;
+}
+.service{
+	width:90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: -webkit-box;
+}
+.service .Simg{
+ 	width:47px;
+ 	height:47px;
+ }
+.service .Simg img{
+ 	width:100%;
+ }
+.service .Stext{
+ 	-webkit-box-flex: 1;
+ }
+.service .Stext p{
+
+	width:90%;
+	-webkit-border-image:url(icon/90后信用-31.png)41 25 47 31/13px;
+}
+.Ask{
+	width:90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: -webkit-box;
+}
+.Ask .Aimg{
+ 	width:47px;
+ 	height:47px;
+ }
+.Ask .Aimg img{
+ 	width:100%;
+ }
+.Ask .Atext{
+ 	-webkit-box-flex: 1;
+ }
+.Ask .Atext p{
+
+	width:90%;
+	-webkit-border-image:url(icon/90后信用-31.png)41 25 47 31/13px;
+}
+.Ask .Atext p{
+	width:90%;
+	-webkit-border-image:url(icon/90后信用-32.png)41 25 47 31/13px;
+}
+/*2*/
+.two {
+	padding-top:20px;
+}
+.two p{
+	width:130px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 15px;
+}
+
+.two dl{
+	width:90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: -webkit-box;
+}
+.two dl dt{
+ 	width:47px;
+ 	height:47px;
+ }
+.two dl dt img{
+ 	width:100%;
+ }
+ .two dl dd{
+ 	-webkit-box-flex: 1;
+ }
+.two dl:nth-child(2) dd p{
+	width:90%;
+	-webkit-border-image:url(icon/90后信用-31.png)41 25 47 31/13px;
+}
+.two dl:nth-child(3) dd p{
+	
+	width:90%;
+	-webkit-border-image:url(icon/90后信用-32.png)41 25 47 31/13px;
+	
+}
+/*3*/	
+.Publish{
+	width:100%;
+	display: -webkit-box;
+	display: -moz-box;
+	padding: 10px;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.Publish:last-child{
+	margin-bottom: 60px;
+}
+.photo img{
+	width:50px;
+	margin-right: 10px;
+}
+.Text{
+	-webkit-box-flex: 1;
+}
+.Text .title{
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+}
+.Text .title img{
+	width:20px;
+	margin-right: 5px;
+}
+.Text .title p{
+	font-size:11px;
+	color:#7b7b7b;
+	line-height: 23px;
+}
+.Text .title:first-child p:first-child{
+	font-size: 13px;
+	color:#00CB4B;
+	font-weight: bold;
+}
+.Text .title:last-child p:last-child{
+	font-size: 11px;
+}	
+/*底部--1--*/
+.footer_one{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height: 50px;
+	background: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	padding:5px 20px 0 20px;
+	z-index: 99;
+}
+.footer_one img{
+	width:30px;
+}
+.footer_one .center{
+	width: 84%;
+}
+.footer_one .center input{
+	width: 100%;
+	height:30px;
+	border:none;
+	border-bottom: 1px solid #ccc;
+}
+.footer_one .right{
+	width:30px;
+	background: url(icon/添加.png) no-repeat;
+	background-size: 30px;
+}
+.footer_one .right input{
+	opacity: 0;
+}
+.footer_one .center img{
+	position: absolute;
+	right:15%;
+}	
+/*底部--2--*/
+#footer_two{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height: 50px;
+	background: #fff;
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	padding:5px 20px 0 20px;
+
+}
+#footer_two p{
+	-webkit-box-pack: justify;
+}
+#footer_two img{
+	width:42px;
+	height:42px;	
+	float: left;
+	margin-right:10px;
+}
+#footer_two label{
+	width: 42px;
+	height:42px;
+	
+	background:url(icon/添加.png) no-repeat center center;
+	background-size: 80%;
+	display: inline-block;
+	/*float:left;*/
+	
+}
+#footer_two label input{
+	width:42px;
+	height: 42px;
+	opacity: 0;
+	/*float: right;*/
+}
+#footer_two input:last-child{
+	width:100%;
+	height:40px;
+	margin-left: 10px;
+	border:none;
+}
+		
+</style>
+		<div class="container">
+			<header>
+				<a href="My_account.html"><img src='icon/返回.png'></a>
+				<p>交流互动</p>
+				<a href="###"><img src='icon/更多.png'></a>
+			</header>
+			<div id="con">
+				<ul id=tags>
+				    <li class="selectTag" onclick="selectTag('tagContent0',this)" >
+				    	意见反馈
+				    </li>
+				    <li onclick="selectTag('tagContent1',this)">
+				   		七嘴八舌
+				    </li>
+				    <li onclick="selectTag('tagContent2',this)" >
+				    	好点子
+				    </li>
+				</ul>
+				<div id="tagContent">
+					<div class="tagContent one" id=tagContent0>
+						
+						<p>11月02日 11:34</p>
+						<div class='service'>
+							<div class="Simg">
+								<img src='img/图片-18.jpg'>
+							</div><!--dt-->
+							<div class="Stext">
+								<p>您好！我是客服小名，有什么可以帮助您的</p>
+							</div><!--dd-->
+						</div><!--dl-->
+						<div class="Ask">
+							<div class='Atext'>
+								<p>我要吃饭，我要吃饭</p>
+							</div><!--dd-->
+							<div class='Aimg'>
+								<img src='img/图片-14.jpg'>
+							</div>
+						</div><!--dl-->
+						
+
+<div class='service'>
+							<div class="Simg">
+								<img src='img/图片-18.jpg'>
+							</div><!--dt-->
+							<div class="Stext">
+								<p>您好！我是客服小名，有什么可以帮助您的</p>
+							</div><!--dd-->
+						</div><!--dl-->
+						<div class="Ask">
+							<div class='Atext'>
+								<p>我要吃饭，我要吃饭</p>
+							</div><!--dd-->
+							<div class='Aimg'>
+								<img src='img/图片-14.jpg'>
+							</div>
+						</div><!--dl-->
+						
+						<div class="footer_one">
+							<div class="left">
+								<img src='icon/语音录入.png'>
+							</div>
+							<div class="center">
+								<label for=""><input type="text" name="" id="" value=""><img src="icon/表情.png"></label>
+							</div>
+							<div class="right">
+								<input type="file" name="" id="" value="">    
+							</div>
+						</div><!--语音输入-->
+						
+					</div><!--1-->
+					<div class="tagContent selectTag two" id=tagContent1>
+						
+						
+						<p>11月02日 11:34</p>
+						<div class='service'>
+							<div class="Simg">
+								<img src='img/图片-18.jpg'>
+							</div><!--dt-->
+							<div class="Stext">
+								<p>您好！我是客服小名，</p>
+							</div><!--dd-->
+						</div><!--dl-->
+						<div class="Ask">
+							<div class='Atext'>
+								<p>我要吃饭12121</p>
+							</div><!--dd-->
+							<div class='Aimg'>
+								<img src='img/图片-14.jpg'>
+							</div>
+						</div><!--dl-->
+								
+						
+						
+						<div class="footer_one">
+							<div class="left">
+								<img src='icon/语音录入.png'>
+							</div>
+							<div class="center">
+								<label for=""><input type="text" name="" id="" value=""><img src="icon/表情.png"></label>
+							</div>
+							<div class="right">
+								<input type="file" name="" id="" value="">    
+							</div>
+						</div><!--语音输入-->
+						
+						
+					</div><!--2-->
+					
+					
+					
+					
+					
+					<div class="tagContent" id=tagContent2>
+						
+						<div class="Publish">
+							<div class="photo">
+								<img src='img/图片-17.jpg'>
+							</div>
+							<div class="Text">
+								<div class='title'>
+									<p>能不能发电优惠卷</p> 
+									<p><img src='icon/点赞.png'>(36)</p>
+								</div>
+								<div class="title">
+									<p>还可以多来点哦，多多益善 </p>
+									<p>2015.12.12</p>
+								</div>
+								
+							</div>
+						</div><!--1-->
+						
+						<div class="Publish">
+							<div class="photo">
+								<img src='img/图片-17.jpg'>
+							</div>
+							<div class="Text">
+								<div class='title'>
+									<p>能不能发电优惠卷</p> 
+									<p><img src='icon/点赞.png'>(36)</p>
+								</div>
+								<div class="title">
+									<p>还可以多来点哦，多多益善 </p>
+									<p>2015.12.12</p>
+								</div>
+								
+							</div>
+						</div><!--1-->
+						
+							<div id="footer_two">
+								<p>
+									<img src='img/未标题-1-18.jpg'>
+									<label for=""><input type='file' name="" id="" value=""></label>
+								</p>
+								<p>
+									<input type="text" id="" name="" value="" placeholder="说出你的好点子"/>
+								</p>
+							</div>
+						
+						
+						<!--说出好点子-->
+						
+						
+						
+					</div><!--3-->
+				</div><!--tagcontent-->
+			</div>
+		</div>
+<script type=text/javascript>
+		function selectTag(showContent,selfObj){
+		 // 操作标签
+		 var tag = document.getElementById("tags").getElementsByTagName("li");
+		 var taglength = tag.length;
+		 for(i=0; i<taglength; i++){
+		  tag[i].className = "";
+		 }
+		 selfObj.parentNode.className = "selectTag";
+		 // 操作内容
+		 for(i=0; j=document.getElementById("tagContent"+i); i++){
+		  j.style.display = "none";
+		 }
+		 document.getElementById(showContent).style.display = "block";
+		
+		 
+		}
+</script>
+	</body>
+</html>

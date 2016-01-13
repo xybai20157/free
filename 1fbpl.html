@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!--meat标签-->
+		<meta charset="UTF-8">
+		<title>发表评论</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
+		<meta name="x5-page-mode" content="app">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--星星-->
+		<script src='js/jquery.js'></script>
+		<link rel="stylesheet" href="js/jquery.raty.css" />
+		<script src='js/jquery.raty.js'></script>
+		<!--样式-->
+		<link rel="stylesheet" href="css/1fbpl.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="wdyy.html"><img src="icon/返回.png" alt=""></a>
+				<p>我的点评</p>
+				<a href="###"><img src='icon/更多.png' alt=""></a>
+			</header>
+
+			<div class="section bg">
+				<form method="post" action="free/comment.do">
+					<ul class="sort_evaluate padding">
+						<li>
+							<h2>菜品口味</h2>
+							<!--星星的大盒子-->
+							<div id="star1">
+
+							</div>
+						</li>
+						<li>
+							<h2>服务态度</h2>
+							<div id="star2">
+
+							</div>
+						</li>
+						<li>
+							<h2>上菜速度</h2>
+							<div id="star3">
+
+							</div>
+						</li>
+						<li>
+							<h2>推荐程度</h2>
+							<div id="star4">
+
+							</div>
+						</li>
+					</ul>
+					<div class="remark padding">
+						<h2>点评</h2>
+						<textarea name="kouwei" id="kouwei" cols="30" rows="5" placeholder="亲，菜品的口味"></textarea>
+						<div class="surplus_number">加油，还差<span>15</span>个字</div>
+					</div>
+					<div class="uploading_photo_box padding">
+						<div class="uploading_btn">
+							<input type="file">
+						</div>
+						<h2>上传照片</h2>
+					</div>
+					<h2 class="share_url">
+		 	  	 <p>同步分享到</p>
+		 	  	 <a href="javascript:void(0)" class="tweet"></a>
+		 	  	 <a href="javascript:void(0)" class="wechat"></a>
+		 	  	 <a href="javascript:void(0)" class="qq"></a>
+		 	  </h2>
+					<div class="submit_btn">
+						<a href="yycg2.html">
+							<input type="button" name="" id="" value="确定" />
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				//这是普通调用
+				//$('#star').raty();
+				//这是修改星星数量,true表示有半颗星
+				$('#star1').raty({
+					
+					scoreName:"kouweipingfen",
+				});
+				$('#star2').raty({
+					scoreName:"taidupingfen"
+				});
+				$('#star3').raty({
+					scoreName:"sudupingfen"
+				});
+				$('#star4').raty({
+					scoreName:"cdupingfen"
+				});
+			})
+		</script>
+
+	</body>
+
+</html>

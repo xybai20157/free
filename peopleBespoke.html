@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes"> 
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">	
+	<title>立即预约</title>
+	<link rel="stylesheet" href="css/reset1.css">
+	<link rel="stylesheet" href="css/peopleBespoke.css" />
+</head>
+<body>
+	<!--立即预约页面-->
+	<div class="container">
+		<header class="bar-header">
+			<a href="Details_store.html" class="back"><img src="icon/返回.png" alt=""></a>
+			<div>
+				<span class="zhuan"><img src="icon/分享.png" alt=""></span>
+				<span class="shou"><img src="icon/收藏.png" alt=""></span>
+				<span class="more"><img src="icon/更多.png" alt=""></span>
+			</div>	
+		</header>
+		<section class="cont">
+			<div class="swiper-box">
+				<img src="img/img1.jpg" alt="">
+			</div><!--banner-->
+			
+			<div class="model-1">
+				<ul>
+					<li><span><input type="radio" name="radio"><label for="radio"></label><b>3人免1</b></span><span>共80份，已抢光！</span></li>
+					<li><span><input type="radio" name="radio"><label for="radio"></label><b>5人免2</b></span><span>共80份，已抢光！</span></li>
+					<li><span><input type="radio" name="radio"><label for="radio"></label><b>7人免3</b></span><span>共80份，已抢光！</span></li>
+				</ul>
+				<div class="model-info">
+					<h2>说明:</h2>
+					<p>为切实保障商家利益，您在抢到相应面给菜品时请务必按照面单上要求的人数就餐，如出现就餐人数不足，人多重复抢单等情况商家有权拒绝提供餐食，本平台保留最终解释权。</p>
+				</div>
+			</div>
+			
+			<div class="yuyue-notice">
+				<p class="cont-mothed">预约须知</p>
+				<ul>
+					<li><p>有效期</p><p><span>2015 / 7 / 12</span><span>10 : 00 至 2015 / 7 / 3</span><span> 20 : 00</span></p></li>
+					<li><p>使用时间</p><p>10:00——14:00</p></li>
+					<li><p>使用规则</p><p>消费高峰时可能需要等位</p><p>店内无包间</p><p>本产品不适于用于吉野家外送服务</p></li>
+				</ul>
+			</div>
+			<div class="yuyue-button">
+				<a href="javascript:;" class="btn" id='sure'>立即预约</a>
+			</div>
+		</section>
+	</div>
+	<!--正在预定弹出框-->
+	<div class="model-2" style="display:none;">
+		<p class="cont-mothed">您正在预定</p>
+
+		<h2>10月17日</h2>
+
+		<p>
+			<span class="dian">永和大王(复兴门店)</span><span class="tit">大王香卤肉饭套餐一份(免费午餐)</span>
+		</p>
+
+		<p class='money'>需要缴纳保证金60元，用餐后可以赎回</p>
+		<p class='remainder'>账户余额不足，请充值</p>
+		<div class="yuyue-right">
+			<a href="Recharge.html" id="skip">充值</a>
+			 <a href="peopleBespoke.html" class="red" onclick="cancel();">取消</a>
+		</div>
+	</div>
+	<!--遮罩层-->
+	<div id="model_bg"></div>
+	
+	
+</body>
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript">
+$('#sure').on('click', function() {
+		$('#model_bg').show();
+		$('.model-2').css('display', 'block');
+	})
+	/*$('#btn').click(function(){
+		$('.model-1').css('display', 'none');
+		$('.model-2').css('display', 'block');
+	});
+*/
+
+</script>
+</html>

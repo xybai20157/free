@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
+		<meta name="x5-page-mode" content="app">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">	
+		<title>我的银行卡</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/wdyhk.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="My_account_content.html"><span> <img src="icon/返回.png" alt="" /></span></a>
+				<p>我的银行卡</p>
+				<a href="###"><span><img src='icon/更多.png'></span></a>
+			</header>
+			<section>
+				<ul>
+					<li>
+						<span>中国工商银行 </span>
+						<input type="text" alt="" name="" placeholder="尾号8390（储蓄卡）" onblur="Bank()"/>
+					</li>
+					<li>
+						<span>中国工商银行 </span>
+						<input type="text" alt="" name="" placeholder="尾号8390（储蓄卡）" />
+					</li>
+					<li>
+						<span>中国工商银行 </span>
+						<input type="text" alt="" name="" placeholder="尾号8390（储蓄卡）" />
+					</li>
+					<li>
+						<span>中国工商银行 </span>
+						<input type="text" alt="" name="" placeholder="尾号8390（储蓄卡）" />
+					</li>
+					
+				</ul>
+				
+			</section>
+			<div id="pop">
+				<p id='pop_text'></p>
+				<button type="submit" id='know'>知道了</button>
+			</div>
+			<div class='btn'>
+					<a href="Add_bank_card.html"><p>+ 添加银行卡<span><img src="icon/箭头-向右.png"></span></p></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			/*var aInput=document.getElementsByTagName('input'),
+				My_bank_card_one=aInput[0],
+				My_bank_card_two=aInput[1],
+				My_bank_card_three=aInput[2],
+				My_bank_card_four=aInput[3],
+				pop_text=document.getElementById("pop_text"),
+				pop=document.getElementById("pop"),
+				know=document.getElementById("know");
+				My_bank_card_one.onblur=function(){
+					Bank(My_bank_card_one)
+				}
+				My_bank_card_two.onblur=function(){
+					Bank(My_bank_card_two)
+				}
+				My_bank_card_three.onblur=function(){
+					Bank(My_bank_card_three)
+				}
+				
+				My_bank_card_four.onblur=function(){
+					Bank(My_bank_card_four)
+				}
+				function Bank(all){
+					var regNumber=/[^\d]/g;
+					if(all.value==""){
+						pop.style.display="block"
+						pop_text.innerHTML="银行卡卡号不能为空";
+						all.focus();
+					}else if(regNumber.test(all.value)){
+						pop.style.display="block";
+						pop_text.innerHTML=" 请输入数字";
+						all.focus();
+						all.focus(all.value="")
+					}else if(all.value.length>19){
+						pop.style.display="block"
+						pop_text.innerHTML=' 请输入正确卡号'
+						all.focus();
+					}else if(all.value.length<16){
+						pop.style.display="block"
+						pop_text.innerHTML=' 请输入正确卡号'
+						all.focus();
+					}else{
+						pop.style.display="none"
+					}
+				}
+				know.onclick=function(){
+					pop.style.display="none"
+				}*/
+		</script>
+	</body>
+</html>

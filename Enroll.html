@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
+		<meta name="x5-page-mode" content="app">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">	
+		<title>注册</title>
+		<link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+   		<link href="http://cdn.bootcss.com/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+          rel="stylesheet">
+	    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link href="http://cdn.bootcss.com/bootstrap-fileinput/4.2.7/css/fileinput.min.css" rel="stylesheet">
+	    <link href="http://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
+	   	<link rel="stylesheet" href="css/reset.css" />
+	   	<link rel="stylesheet" href="css/Enroll.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<a href="login.html"><img src='icon/jiantou.png'></a>
+				<p>注册</p>
+			</header>
+			<section>
+				<form id="defaultForm" method="post" class="one form-horizontal" action="target.php"
+		                      data-bv-message="This value is not valid"
+		                      data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+		                      data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+		                      data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+		            <div class="content">
+							<div class="form-group user">
+		                        <label class="col-xs-2 control-label"><img src='icon/myAccount.png'></label>
+		                        <div class="col-xs-10">
+		                            <input type="text" class="form-control" name="email" 
+		                            	placeholder="邮箱/手机号"
+		                            	pattern="(^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$)|(^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$)" 
+		                            	data-bv-regexp-message="请输入正确的邮箱或手机号"
+		                            	required data-bv-notempty-message="用户名能为空"
+		                            	/>
+		                            	<!--pattern="(^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$)|(^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$)|([a-zA-Z\u4e00-\u9fa5][a-zA-Z0-9\u4e00-\u9fa5]+)"-->
+		                            	<!--data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="10" data-bv-stringlength-message="请输入范围在16~19之间"-->
+		                            	<!--pattern="^\w+$" data-bv-regexp-message="请输入用户名"-->
+		                        </div>
+		                    </div><!--user-->
+		                    <div class="form-group password" >
+		                        <label class="col-xs-2 control-label"><img src='icon/小锁.png'></label>
+		                        <div class="col-xs-10">
+		                            <input type="password" class="form-control" name="userPassword" 
+		                            	placeholder="请输入6~12位密码"
+		                            	pattern="^\w+$" data-bv-regexp-message="请输入密码"
+		                            	required data-bv-notempty-message="密码不能为空"
+		                            	data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="10" data-bv-stringlength-message="请输入6~10位密码"
+		                            	/>
+		                            	
+		                        </div>
+		                    </div><!--password-->
+                     </div><!--content-->
+                     <div class="form-group Submit">
+					 	<div class="col-xs-12">
+					 		<a href="Success_enroll_CZ.html" style="padding:10px;background: orange;width:100%;display: inline-block;border-radius: 5px; text-align: center;color:#fff">提交<!--<input type="submit" class="form-control" name="" id="" value="提交" />--></a>
+					 	</div>
+					 </div><!--Submit-->
+				</form>
+			</section>
+		</div>
+		<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap-validator/0.5.3/js/language/zh_CN.min.js"></script>
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        $('#defaultForm').bootstrapValidator();
+		    });
+		</script>
+	</body>
+</html>

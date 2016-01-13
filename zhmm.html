@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>找回密码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/zhmm.css" />
+		<script src='js/zepto.min.js'></script>
+	</head>
+
+	<body>
+		<div class='container'>
+			<header class='header'>
+				<a href="Land.html"></a>
+				<p>找回密码</p>
+			</header>
+			<section>
+				<div class="table">
+					<form action="zhmm.do" method="post">
+						<ul>
+							<li><span>+86 </span></li>
+							<li>
+								<input type="text" name="" id="" value="" placeholder="请输入手机号" />
+							</li>
+							<li style=' position:relative'>
+								<div id='identifying_code' style="border: 1px solid #ccc;">获取验证码</div>
+							</li>
+						</ul>
+						<ul>
+							<li><span>验证码</span> </li>
+							<li>
+								<input type="text" name="" id="" value="" placeholder="请输入验证码" />
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div class="btn">
+					<input type="submit" name="" id="" value="提交" onclick="return Submit()" />
+				</div>
+			</section>
+			<div id="pop">
+				<p id='pop_text'></p>
+				<button type="submit" id='know' onclick="inputFocus();">知道了</button>
+			</div>
+		</div>
+		<script type="text/javascript" src='js/javascript.js'></script>
+
+	</body>
+
+</html>

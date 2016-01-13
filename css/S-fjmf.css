@@ -1,0 +1,251 @@
+html,body.container{
+	width:100%;
+	height:100%;
+	position: relative;
+	overflow-x:hidden;
+	-webkit-box-sizing:border-box;
+}
+.header{
+	width:100%;
+	height:50px;
+	background:#00CD4E;
+	display: -webkit-box;
+	line-height: 50px;
+	font-size:16px;
+	font-weight: bold;
+	color: #fff;
+	padding:0 10px;
+	position:fixed;
+	top:0;
+	z-index: 99;
+}
+.header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+}
+.header p img{
+	width:20px;
+	margin-top: 10px;
+}
+.header a img{
+	width:20px;
+	margin-top: 12px;
+}
+/*一下为nav导航内容*/
+#sidebar-tab{overflow:hidden;position: fixed;top:50px;z-index: 98;width:100%;} 
+#tab-title h3{height:34px;width:100%;background: #fff;border-bottom: 1px solid #ccc;}
+/*#tab-title .selected{color:#356aa0;border-bottom:0px;}*/ /*标题被选中时的样式*/ 
+#tab-title span{text-align: center;line-height:34px;width:31.3%;display:inline-block;font-size: 14px;}
+#tab-content .hide{display:none;} /*默认让第一块内容显示，其余隐藏*/ 
+#tab-content{width:100%;height:100%;overflow: hidden;display: none;}
+#tab-content ul{width:100%;height:100%;overflow:hidden;background: #fff;}
+#tab-content .hide{display:block;}
+#tab-title h3 span img{
+	width:15px;
+	margin-left: 5px;
+}
+/*距离优先*/
+.distance{
+	border-bottom: 1px solid #ccc;
+}
+.distance li{
+	margin: 0 10px;
+	padding:15px 0;
+	border-bottom: 1px solid #ccc;
+	
+}
+.distance li:last-child{
+	border:none;
+}
+/*筛选*/
+.filter p{
+	padding:10px 0;
+	margin-left: 10px;
+}
+.filter ol{
+	display: -webkit-box;
+	border-bottom:1px solid #ccc;
+	margin: 10px;
+	padding-bottom: 10px;
+}
+.filter ol li{
+	-webkit-box-flex: 1;
+	text-align: center;
+}
+ol li span>label{
+	display: inline-block;
+	background:#fff;
+	background-size: 80%;
+	width:67px;
+	height:33px;
+	text-align: center;
+	line-height: 33px;
+	border-radius: 5px;
+	border:1px solid #00cd4e;
+}
+
+ol li input{
+	position: absolute;
+	width:100%;
+	height:30px;
+	opacity: 0;
+}
+
+ol li span>input:checked+label{
+	background:#cdf5db;
+	background-size:80%;
+}
+.filter .btn{
+	width:90%;
+	margin: 0 auto;
+	padding:20px 0;
+	display: -webkit-box;
+}
+.filter .btn input{
+	-webkit-box-flex: 1;
+	display: block;
+	color:#fff;
+	margin: 0 10px;
+	padding:10px 0;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+}
+.filter .btn input[type=reset]:first-child{
+		background: #f8b617;
+		border:none;
+		
+}
+.filter .btn input[type=button]:last-child{
+		background: #00cd4e;
+}
+
+
+
+/*遮罩层*/
+.cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 90;
+	background: #000;
+	opacity: 0.5;
+	display: none;
+}
+/*address地址*/
+#tab{
+	display: -webkit-box;
+}
+#left{
+	background:#eeeef0;
+}
+#left h3 p{
+	height:50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-size:14px;
+}
+#left h3 p:hover{
+	background: #f7f7f7;
+}
+/*#right{
+	background: gold;
+}*/
+#tab>div{
+	-webkit-box-flex: 1;
+}
+#tab #right{
+	
+	height:345px;
+	overflow: hidden;
+}
+#tab #right ul{
+	
+	height:345px;
+}
+#tab #right ul li{
+	height:49px;
+	border-bottom: 1px solid #ccc;
+	line-height: 49px;
+	margin-left: 10px;
+}
+#tab #right ul li:hover{
+	color: #00CB4B;
+	border-bottom:1px solid #00CB4B;
+}
+.bg{
+	background: url(../icon/ul_bg_03.gif) no-repeat bottom center;
+	background-size: 15px;
+}
+/*以上内容为nav的导航内容*/
+section{
+	width:100%;
+	position: absolute;
+	top:80px;
+	bottom:100px;
+}
+section a{
+	text-decoration: none;
+	color: #7a7a7a;
+}
+	
+#banner{
+	width:100%;
+	position: relative;
+	overflow-x: hidden;
+}
+#banner ul li img{
+	width:100%;
+	display: block;
+}
+
+.content dl {
+	display: -webkit-box;
+	border-top:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	margin-top:8px;
+	padding: 5px 0;
+}
+.content dl dt{
+	margin-left: 10px;
+}
+.content dl dt img{
+	width:84px;
+}
+.content dl dd{
+	-webkit-box-flex: 1;
+	padding-left:12px;
+}
+.content dl dd p:nth-child(1) {
+	font-size: 14px;
+}
+.content dl dd p a:nth-child(2){
+	margin-left: 12px;
+}
+.content dl dd p{
+	line-height: 24px;
+}
+.content dl dd p span{
+	float: right;
+	margin-right:7%;
+	font-size: 15px;
+}
+.content dl dd img{
+	width:10px;
+	height: 10px;
+	margin-right:2px;
+}
+#span{
+	width:60px;
+	height:30px;
+	text-align: center;
+	background: #F8B617;
+	line-height: 30px;
+	border-radius: 5px;
+	color: #fff;
+}
+.content{
+	    margin-bottom: 70px;
+}

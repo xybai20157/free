@@ -1,0 +1,229 @@
+@import url("reset.css");
+.box {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html{
+  font-size: 62.5%;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.a {
+  position: absolute;
+}
+.r {
+  position: relative;
+}
+.wrapper_3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  background: #EEEEF0;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #00CD4E;
+  display: -webkit-box;
+}
+header p{
+	line-height: 50px;
+		color: #fff;
+}
+header p:first-child{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.5rem;
+	padding-left:22px;
+}
+header p:last-child {
+	width:100px
+	padding-right:10px;
+	padding-right:20px;
+}
+header p:last-child img{
+	width:22px;
+}
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  -wekit-box-flex: 1;
+}
+.pot_3 {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #ccc;
+  padding: 10px;
+  background: #fff;
+  position: relative;
+}
+.pot_3 a {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.pot_3 a img {
+  width: 50px;
+  height: 50px;
+  background-size: 100% auto;
+}
+.pot_3 h1 {
+  font-size: 14px;
+  float: right;
+  line-height: 20px;
+  margin-right: 120px;
+}
+.pot_3 h1 small {
+  margin-left: 10px;
+  color: #00CD4E;
+}
+.pot_3 h1 b {
+  color: #DADADC;
+  font-weight: 400;
+}
+.pot_3 p {
+  float: right;
+  margin-right: 130px;
+}
+.pot_3 span {
+  position: absolute;
+  right: 23px;
+  top: 25px;
+}
+.pot_3 span img {
+  width: 10px;
+  height: 20px;
+}
+.content{
+	width:100%;
+	margin:0 auto;
+	background:#fff;
+	margin-top:20px;
+}
+.content ul{
+	border-bottom: 1px solid #ccc;
+}
+.content ul li{
+	width:90%;
+	margin:0 auto;
+	display: -webkit-box;
+	border-bottom: 1px solid #ccc;
+}
+.content ul a{
+	  text-decoration: none;
+    width: 91%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.content ul a:last-child{border:none}
+.content ul li span img{
+	width:22px;
+	padding-top:5px;
+}
+.content ul li {
+	padding:10px 0;
+	font-size: 1.5rem;
+	color:#717071;
+}
+.content ul li p{
+padding:10px 0 10px 5px;
+	-webkit-box-flex: 1;
+	background: url(../icon/箭头-向右.png) no-repeat right;background-size: 10px;
+}
+.content ul li:last-child{
+	border:none
+}
+
+/*分享按钮*/
+
+.modle_bg{
+	width:100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	background:rgba(0,0,0,0.5); 
+
+}
+.icon{
+	width:100%;
+	position: absolute;
+	top:50%;
+	bottom: 0;
+	background: #fff;
+	
+}
+.icon ul {
+	display: -webkit-box;
+	margin-top:17px;
+}
+.icon li{
+	text-align: center;
+	-webkit-box-flex: 1;
+}
+.icon li dl dt{
+	width:47px;
+	height:47px;
+}
+.icon li dl dt img{
+	width:100%;
+	height:100%;
+}
+.icon li dl{
+	height:80px;
+	width:47px;
+	margin:0 auto;
+}
+.icon dd{
+	margin-top:5px;
+	color:#828080;
+}
+.icon:first-child{
+	margin-top:20px;
+}
+.icon p{
+	text-align: center;
+	padding-top:10px;
+}
+.icon button{
+	width:80%;
+	margin:0 auto;
+	display: block;
+	padding:10px 0 ;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: goldenrod;
+	color: #fff;
+}
+.icon a{
+	width:100%;
+	text-decoration: none;
+	color: #fff;
+}

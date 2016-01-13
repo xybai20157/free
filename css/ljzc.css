@@ -1,0 +1,126 @@
+@font-face {
+font-family:Myfont;
+font-style:normal;
+font-weight: bold;
+src: url(../font/mui.ttf) format("truetype");
+}
+body,html.container{
+	width:100%;
+	height:100%;
+	background: #eeeef0;
+}
+html{
+	font-size: 62.5%;
+}
+.header{
+	width:100%;
+	height:50px;
+	background:#00cd4e ;
+	display: -webkit-box;
+	line-height: 50px;
+	padding: 0 10px;
+	color: #fff;
+}
+.header a{
+	text-decoration: none;
+}
+.header a:before{
+	font-family: Myfont;
+	content: "\e471";
+	font-size: 24px;
+	color: #fff;
+}
+.header p:last-child{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 1.5rem;
+}
+section{
+	width:100%;
+	position:absolute;
+	top:50px;
+}
+.table{
+	margin-top: 10px;
+	width:100%;
+	background:#fff;
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+.table ul{
+	width:90%;
+	margin:0 auto;
+	padding:10px 0;
+	display: -webkit-box;
+	border-bottom:1px solid #ccc;
+}
+
+.table ul li span{
+	font-size: 1.8rem;
+    font-weight: bold;
+    color: #00cc4e;
+}
+.table ul li:nth-child(2){
+	-webkit-box-flex: 1;
+}
+.table ul:first-child li:first-child{
+	margin-right:35px;
+}
+.table ul:nth-child(2) li:first-child{
+	margin-right:5px;
+}
+.table ul:last-child li:first-child{
+	margin-right:10px;
+}
+.table ul:last-child{
+	border:none;
+}
+.table input{
+	border: none;
+	outline: none;
+}
+.table button{
+	padding:6px 10px;
+	border:none;
+	outline: none;
+	color: #fff;
+	background: #00CB4B;
+	border-radius: 5px;
+}
+.btn{
+	width:80%;
+	margin:0 auto;
+	margin-top: 24px;
+	
+}
+.btn input{
+	width:100%;
+	background: #f8b616;
+	border:none;
+	padding:10px;
+	border-radius: 7px;
+	font-size: 16.8px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

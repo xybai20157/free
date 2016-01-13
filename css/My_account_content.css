@@ -1,0 +1,145 @@
+@import "reset.css";
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-orient: vertical;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: "微软雅黑";
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background: #00CD4E;
+  display: -webkit-box;
+  line-height: 50px;
+  position: fixed;
+  top:0;
+  padding: 0 10px;
+}
+.header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.header span img{
+	width:20px;
+	margin-top: 16px;
+}
+.main {
+  width: 100%;
+  -webkit-box-flex: 1;
+  background: #EEEEF0;
+  position: absolute;
+  top:50px;
+}
+.main > div {
+  width: 100%;
+  background: #fff;
+  
+}
+.price>div{
+	padding:10px;
+}
+.main > div.price {
+  height: 18rem;
+  margin-bottom: .8rem;
+  border-bottom: 1px solid #E1E1E1;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-orient: vertical;
+}
+.main > div.price .vBox {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -webkit-box-orient: horizontal;
+}
+.main > div.price .vBox .hBox {
+  width: 50%;
+  height: 100%;
+  padding-top: 1rem;
+}
+.main > div.price .vBox .hBox:first-child span {
+  color: #00CD4E;
+}
+.main > div.price .vBox .hBox:last-child {
+  border-left: 2px solid #F2F2F2;
+  padding-left: 1.5rem;
+}
+.main > div.price .vBox .hBox span {
+  font-size: 24px;
+}
+.main > div.price .vBox .hBox p {
+  color: #666;
+  height: 3rem;
+  line-height: 3rem;
+}
+.main > div.price .vBox:first-child {
+  border-bottom: 2px solid #F2F2F2;
+}
+.main > div.price .vBox:first-child .hBox:last-child span {
+  color: #F7B516;
+}
+.main > div.price .vBox:last-child .hBox:last-child span {
+  color: #FA5F5B;
+}
+.content{
+	width:100%;
+	margin:0 auto;
+	background:#fff;
+	border-bottom: 1px solid #ccc;
+}
+.content ul li{
+	width:100%;
+	margin:0 auto;
+	display: -webkit-box;
+}
+.content .li img{
+	width:20px;
+	height:23px;
+}
+.content ul a:last-child{
+	border:none;
+}
+.content ul a{
+	text-decoration: none;
+	
+}
+.content ul li span img{
+	width:22px;
+	margin:22px 3px 0 0;
+}
+.content ul li{
+	font-size: 1.5rem;
+	color:#717071;
+}
+.content ul li p{
+	
+	-webkit-box-flex: 1;
+	background: url(../icon/箭头-向右.png) no-repeat right;background-size: 10px;
+  height: 60px;
+  line-height: 60px;
+}
+.content ul a{
+    text-decoration: none;
+    width: 91%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

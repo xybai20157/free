@@ -1,0 +1,170 @@
+
+
+
+html{
+	font-size: 62.5%;
+}
+html,body,.container{
+	width:100%;
+	height:100%;
+	background: #EEEEF0;
+	overflow-x: hidden;
+}
+header{
+	width:100%;
+	height: 50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	line-height: 50px;
+	padding:0 10px;
+	position:fixed;
+	top:0;
+	z-index: 99;
+}
+header p{
+	color:#fff;
+	-webkit-box-flex: 1;
+	font-size: 1.4rem;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+header a img{
+	width:20px;
+	margin-top: 16px;
+}
+
+section {width:100%;
+	position:absolute;
+	top:50px;
+}
+
+section div{
+	padding:15px 10px;
+	background: #EEEEEF;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color:#848484;
+	background: #fff;
+}
+section div input{
+	border:none;
+	background: none;
+	outline: none;
+}
+.two p input{
+	width:60%;
+	border:none;
+	background: none;
+	outline: none;
+}
+.two{
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+}
+.two p{
+	position: relative;
+	background: url(../icon/添加.png)no-repeat right;
+	background-size: 15px;
+	padding:0px 20px;
+	border-left: 2px solid #ccc;
+}
+.two p input{
+	width:20px;
+	height: 20px;
+	position: absolute;
+	right:0px;
+	opacity: 0;
+}
+section div:nth-child(3){
+	font-size: 1.2rem;
+	font-weight:normal;
+	background: none;
+}
+section .txt{
+	width:100%;
+	display: -webkit-box;
+	padding: 10px ;
+	
+}
+section .txt p{
+	font-size: 1.2rem;
+	font-weight: normal;
+	width:30px;
+}
+section .txt .area{
+	width:100%;
+	display: block;
+	-webkit-box-flex: 1;
+	padding: 0;
+	border:none;
+}
+ section .txt .area img{
+	width:46px;
+	position: relative;
+	float:left;
+}
+section .txt  .area p{
+	width:46px;
+	height: 46px;
+	position: absolute;
+	left: 90px;
+	display: inline-block;
+	background: url(../icon/添加.png) no-repeat center center;
+	background-size: 40px;
+}
+section .txt input{
+	width:46px;
+	height: 46px;
+	opacity: 0;
+}
+section .txt button{
+	float: right;
+	margin-top:5px;
+	padding: 10px;
+	background: #00cd4f;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	color: #fff;
+}
+section .txt button a{
+	color:#fff
+}
+section>div:last-child{
+	border:none;
+}
+.btn{
+	width:90%;
+	margin:0 auto;
+	background: none;
+	background: #f8b616;
+	border:none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 10px auto;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

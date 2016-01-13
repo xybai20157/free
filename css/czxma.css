@@ -1,0 +1,122 @@
+
+body,html.container{
+	width:100%;
+	height:100%;
+	background: #eeeef0;
+}
+.header{
+	width:100%;
+	height:50px;
+	background:#00cd4e ;
+	display: -webkit-box;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #fff;
+}
+.header a img{
+	width:20px;
+	margin-top: 16px;
+}
+.header p:last-child{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 16px;
+}
+section{
+	width:100%;
+	position:absolute;
+	top:50px;
+}
+.table{
+	width:100%;
+	margin-top: 10px;
+	background:#fff;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.table p{
+	width: 90%;
+	margin:0 auto;
+	display: -webkit-box;
+	height:55px;
+	
+	padding-top:10px;
+	font-size: 15px;
+	border-bottom: 1px solid #eaeaea;
+}
+.table p:last-child{
+	border:none;
+}
+.table p input{
+	border:none;
+	padding: 10px 10px 10px 5px;
+	outline: none;
+}
+.table p span{
+	
+	font-size: 18px;
+	font-weight: bold;
+	color: #00cc4e;
+}
+.btn{
+	width:80%;
+	margin:0 auto;
+	margin-top: 24px;
+}
+.btn input{
+	width:100%;
+	background: #f8b616;
+	border:none;
+	padding:10px;
+	border-radius: 7px;
+	font-size: 16.8px;
+	color: #fff;
+}
+#pop{
+	width:70%;
+	height:140px;
+	background: #fff;
+	border-radius: 20px;
+	position:absolute;
+	top:30%;
+	left:50%;
+	margin-left:-35%;
+	border:1px solid #DCDCDC;
+	display: none;
+}
+#pop button{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	padding:10px 0;
+	border-radius: 0 0 20px 20px;
+	border:none;
+	outline: none;
+	color: #2fa7dc;
+	background: #fff;
+	border-top:1px solid #C9C9CB
+}
+#pop #pop_text{
+	text-align: center;
+	line-height: 100px;
+	color: #221914;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
