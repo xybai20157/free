@@ -39,7 +39,6 @@ section {
 
 section div {
     padding: 15px;
-    background: #EEEEEF;
     border-bottom: 1px solid #ccc;
     color: #848484;
     background: #fff;
@@ -148,7 +147,10 @@ section .txt button {
     border-radius: 5px;
     color: #fff;
 }
-
+section .error{
+    color: #fb5f5b;
+    font-size: 12px;
+}
 section .txt button a {
     color: #fff
 }
@@ -159,14 +161,17 @@ section > div:last-child {
 
 .btn {
     width: 90%;
-    background: none;
-    background: #f8b616;
+    margin: 10px auto;
+    border: none;
+}
+.btn input{
+    width: 100%;
+    padding: 15px 0;
     border: none;
     border-radius: 5px;
+    background: #f8b616;
+    font-size: 16px;
     color: #fff;
-    font-size: 1.5rem;
-    margin: 10px auto;
-    padding: 0;
 }
 
 

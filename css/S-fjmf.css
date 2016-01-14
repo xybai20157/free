@@ -32,18 +32,15 @@ html,body.container{
 	margin-top: 12px;
 }
 /*一下为nav导航内容*/
-#sidebar-tab{overflow:hidden;position: fixed;top:50px;z-index: 98;width:100%;} 
-#tab-title h3{height:34px;width:100%;background: #fff;border-bottom: 1px solid #ccc;}
-/*#tab-title .selected{color:#356aa0;border-bottom:0px;}*/ /*标题被选中时的样式*/ 
-#tab-title span{text-align: center;line-height:34px;width:31.3%;display:inline-block;font-size: 14px;}
-#tab-content .hide{display:none;} /*默认让第一块内容显示，其余隐藏*/ 
+#sidebar-tab{overflow:hidden;position: fixed;top:50px;z-index: 98;width:100%;}
+#tab-title h3{height:34px;width:100%;background: #fff;color:#2d2a2c;border-bottom: 1px solid #ccc;display: -webkit-box;}
+/*#tab-title .selected{color:#356aa0;border-bottom:0px;}*/ /*标题被选中时的样式*/
+#tab-title span{text-align: center;line-height:34px;display:block;-webkit-box-flex: 1;}
+#tab-content .hide{display:none;} /*默认让第一块内容显示，其余隐藏*/
 #tab-content{width:100%;height:100%;overflow: hidden;display: none;}
 #tab-content ul{width:100%;height:100%;overflow:hidden;background: #fff;}
+#tab-content ul li{color:#000}
 #tab-content .hide{display:block;}
-#tab-title h3 span img{
-	width:15px;
-	margin-left: 5px;
-}
 /*距离优先*/
 .distance{
 	border-bottom: 1px solid #ccc;

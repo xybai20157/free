@@ -29,7 +29,7 @@
 				<p>我需要的温暖</p>
 			</header>
 			<section>
-				<form name="form1" action="Need_warm_CZ.html" method="post" >
+				<form name="form1" class="form1" action="" method="post" >
 				<div>
 					<span>申请标题</span>
 					<input type="text" name="title" id="title"/>
@@ -47,7 +47,7 @@
 				<div class='txt'>
 					<p>详细说明</p>
 					<div class='area'>
-						<textarea name="" rows="" cols="" style="width:100%; height:70px"></textarea>
+						<textarea name="" id="content" style="width:100%; height:70px"></textarea>
 						<div class="img" id="preview"><img  id="imghead" src="img/111-01.jpg" alt="" /></div>
 						<p><input type="file" onchange="previewImage(this)"/></p>
 						<button type="submit">上传图片(1)</button>
@@ -69,55 +69,14 @@
 					<span>详细地址</span>
 					<input type="text"  id="address"/>
 				</div>
-				<div class="btn">
-					<input type="submit" value="发布" class='btn' id="btn" onclick="return checkform(this.form)"/>
+				<div  class='btn' >
+					<input type="button" value="发布" id="btn"/>
 				</div>
 					
 				</form>
 			</section>
 		</div>
 		<script src="js/jquery1.8.3.min.js"></script>
-		<script src="js/upload.js"></script>
-		<script>
-			function checkform(){
-				var reg=/^1\d{10}$/;
-				if($("#title").val()==""||$("#name").val()==""||$("#reason").val()==""||$("#goods").val()==""||$("#number").val()==""||$("#address").val()==""){
-					return false;
-				}
-				if(!reg.test($("#phone").val())){
-					return false;
-				}
-				console.log($("#phone"));
-				return true;
-			}
-			/*function checkForm(){
-				if($("#title").val()==""||$("#name").val()==""||$("#reason").val()==""||$("#goods").val()==""||$("#address").val()==""){
-					$("#btn").css("opacity","0.5").disable();
-					return false;
-				}
-				if(!/^1\d{10}$/.test($("#tel"))){
-					return false;
-				}
-				console.log(1);
-				return true;
-			}*/
-		/*function phone(num){
-			var reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
-			if(!reg.test(num)){
-				return false;
-			}
-			return true
-		}
-		$('#btn').on('click',function(){
-			var txt=$.trim($('#iphone').val());
-			if(!iphone(txt)){
-				alert("错误")
-			}else{
-				alert('正确')
-			}
-		})
-*/
-			
-		</script>
+		<script charset="utf-8" src="js/check.js"></script>
 	</body>
 </html>
