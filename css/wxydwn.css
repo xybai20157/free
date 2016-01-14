@@ -150,6 +150,7 @@ section .txt button {
 section .error{
     color: #fb5f5b;
     font-size: 12px;
+    display: none;
 }
 section .txt button a {
     color: #fff
