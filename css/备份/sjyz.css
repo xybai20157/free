@@ -1,0 +1,100 @@
+html{
+	font-size: 62.5%;
+}
+html,body.container{
+	width:100%;
+	height:100%;
+	background: #EEEEEF;
+}
+header{
+	width:100%;
+	height:50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	line-height: 50px;
+}
+header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+}
+header a{
+	margin: 10px;
+}
+header a img{
+	width:20px
+}
+header a img:first-child{
+	margin-top:16px
+}
+section{
+	width:100%;
+}
+section p{
+	width:90%;
+	margin:0 auto;
+	font-size:1.4rem;
+	line-height: 25px;
+	padding:10px 0;
+	color: #858485;
+}
+.table{
+	padding:10px 0;
+	background: #fff;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.table span{
+	float: right;
+	padding:4px;
+	background: #00cc4e;
+	border-radius: 5px;
+	color: #fff;
+}
+.table input{
+	outline: none;
+	border: none;
+}
+section button{
+	margin: 0 auto;
+    padding: 10px;
+    background: #f8b616;
+    display: block;
+    width: 90%;
+    border:none;
+    outline: line;
+    margin-top:30px;
+    border-radius: 5px;
+    color: #fff;
+}
+section a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

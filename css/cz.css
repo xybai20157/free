@@ -46,9 +46,9 @@ header p{
 }
 section {
   width: 100%;
+  height: 32rem;
   background: #fff;
 	color: #7c7b7c;
-	border-bottom: 1px solid #ccc;
 }
 section ul {
   width: 90%;
@@ -56,15 +56,10 @@ section ul {
 }
 section ul li {
   width: 100%;
-  height:60px;
+  height: 3.5rem;
   border-bottom: 1px solid #ccc;
-  line-height: 60px;
-  font-size: 1.5rem;
+  line-height: 3.5rem;
 }
-section ul li:last-child{
-	border:none;
-}
-
 section .code {
   position: relative;
 }
@@ -83,32 +78,15 @@ section input {
   margin-left: 20px;
   height: 30px;
 }
-.btn{
-	width:90%;
-	padding:5px 0;
-	text-align: center;
-	color: #fff;
-	line-height: 30px;
-	margin: 0 auto;
-	background: #f8b617;
-	display: block;
-	margin-top: 20px;
-	border-radius: 5px;
-	font-size: 1.5rem;
-	outline: none;
-	border:none
+#button {
+  width: 80%;
+  height: 3rem;
+  background: #F8B617;
+  position: absolute;
+  left: 50%;
+  top: 40rem;
+  margin-left: -40%;
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

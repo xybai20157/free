@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <TITLE> New Document </TITLE>
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY>
+<div onclick="test()">
+    <div onclick="test()">
+        <div onclick="test()">阻止事件冒泡</div>
+    </div>
+</div>
+</BODY>
+</HTML>
+<SCRIPT LANGUAGE="JavaScript">
+    <!--
+    //阻止事件冒泡
+    function stopEventBubble(event){
+        var e=event || window.event;
+
+        if (e && e.stopPropagation){
+            e.stopPropagation();
+        }
+        else{
+            e.cancelBubble=true;
+        }
+    }
+
+    //测试方法，调用时，直接调用test()或者test(event)，前者默认在调用最后一个未对应的参数传递事件
+    function test(evt){
+        alert('hahaha');
+        stopEventBubble(evt);
+    }
+    //-->
+</SCRIPT>

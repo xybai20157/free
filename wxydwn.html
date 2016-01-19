@@ -47,7 +47,7 @@
 				<div class='txt'>
 					<p>详细说明</p>
 					<div class='area'>
-						<textarea name="" id="content" style="width:100%; height:70px"></textarea>  <div class="error" style="padding: 5px" >请详细说明申请原因</div>
+						<textarea name="" id="content" style="width:100%; height:70px"></textarea>  <div class="error2">请详细说明申请原因</div>
 						<div class="img" id="preview"><img  id="imghead" src="img/111-01.jpg" alt="" /></div>
 						<p><input type="file" onchange="previewImage(this)"/></p>
 						<button type="submit">上传图片(1)</button>
@@ -109,6 +109,19 @@
 					return false;
 				});
 			});
+			/*function beforeSend() {
+				var reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+				console.log("111111111");
+				$("form  :input").each(function(index,item){
+					console.log(1);
+					if(item.val().length==0){
+						item.next().show();
+					}
+				});
+				if(title.length!=0&&name.length!=0&&reason.length!=0&&content.length!=0&&goods.length!=0&&number.length!=0&&phone.length!=0&&reg.test($(('#phone')).val())&&address.length!=0){
+					window.location="Need_warm_CZ.html";
+				}
+			}*/
 			function beforeSend() {
 				var reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
 				var form=$("form");

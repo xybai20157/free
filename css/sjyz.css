@@ -12,6 +12,8 @@ header{
 	background: #00CB4B;
 	display: -webkit-box;
 	line-height: 50px;
+	position: fixed;
+	top:0;
 }
 header p{
 	-webkit-box-flex: 1;
@@ -31,63 +33,63 @@ header a img:first-child{
 }
 section{
 	width:100%;
+	position:absolute;
+	top:50px;
 }
-section p{
-	width:90%;
-	margin:0 auto;
-	font-size:1.4rem;
-	line-height: 25px;
-	padding:10px 0;
-	color: #858485;
+section .Text{
+	background: #EEEEF0;
 }
-.table{
-	padding:10px 0;
-	background: #fff;
+section .Text p{
+	line-height: 34px;
+	color: #727171;
+	padding: 0px 20px;
+}
+section .proving{
 	border-top:1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+	padding: 20px 20px;
+	background: #fff;
 }
-.table span{
-	float: right;
-	padding:4px;
-	background: #00cc4e;
-	border-radius: 5px;
-	color: #fff;
+section .proving p{
+	font-size: 1.5rem;
 }
-.table input{
+section .proving input{
+	width:30%;
+	height:20px;
+	margin-left: 20px;
+	border:none;
 	outline: none;
-	border: none;
 }
-section button{
-	margin: 0 auto;
-    padding: 10px;
-    background: #f8b616;
-    display: block;
-    width: 90%;
-    border:none;
-    outline: line;
-    margin-top:30px;
-    border-radius: 5px;
-    color: #fff;
-}
-section a{
+section .proving button{
+	float:right;
+	padding:10px;border-radius: 5px;
+	border:none;
+	outline: none;
+	background: #00CA44;
 	color: #fff;
-	text-decoration: none;
+	margin-top: -5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section .btn{
+	
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+section .btn button{
+	width:100%;
+	margin: 0 auto;
+	padding:10px;
+	background: #f8b617;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+	color: #fff;
+}
+#errMsg{
+	color:red;
+	padding:10px 20px;
+	font-size:.8rem;
+}
 
 
 

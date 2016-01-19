@@ -58,7 +58,7 @@ section .dl dd{
 	line-height: 20px;
 }
 section .dl dd span{
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	color: #00cc4e;
 }
 section .dl dd .p{
@@ -167,19 +167,19 @@ section .dl_list img{
 }
 section .dl_list dd{
 	-webkit-box-flex: 1;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	line-height: 25px;
 	color: #7d7c7d;
 }
 section .dl_list dd p span:first-child{
 	display: block;
 	float: right;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	color: #00CB4B;
 	font-weight: bold;
 }
 section .dl_list dd p:first-child{
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 }
 section .dl_list dd p .span{

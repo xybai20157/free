@@ -1,0 +1,101 @@
+
+
+html{
+	font-size: 62.5%;
+}
+html,body.container{
+	width: 100%;
+	height：100%;
+	background: #EEEEEF;
+}
+header{
+	width:100%;
+	height: 50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	line-height: 50px;
+	padding:0px 10px;
+}
+header a img{
+	width:20px;
+	margin-top:16px;
+}
+header p{
+	text-align: center;
+	-webkit-box-flex: 1;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	
+}
+section{
+	width:100%;
+	background: #fff;
+}
+section .logo{
+	background: #EEEEEF;
+	width: 100%;
+    text-align: center;
+}
+section .logo img{
+	width:25%;
+	height:11%;
+	margin:4% 0px;
+	
+}
+section p{
+	width:90%;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	color: #7d7c7d;
+	text-indent: 24px;
+	line-height: 23px;
+	padding:10px 0;
+}
+section ol{
+	width: 90%;
+	margin: 0 auto;
+}
+section ol li{
+	line-height: 23px;
+	color: #7d7c7d;
+	font-size: 1.0rem;
+	margin-left:20px;
+}
+button{
+	width: 90%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f8b616;
+     color: #fff;
+}
+ a{
+	
+	text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

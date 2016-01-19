@@ -1,0 +1,96 @@
+html{
+	font-size: 62.5%;
+}
+html,body,.container{
+	width:100%;
+	height:100%;
+	background: #f2f2f2;
+	padding:0;
+	overflow-x: hidden;
+}
+header{
+	height:50px;
+	width:100%;
+	background: #00cc4e;
+	display:-webkit-box;
+	line-height: 50px;
+	position:fixed;
+	top:0;
+	padding:0 10px;
+	z-index: 99;
+}
+header a img{
+	width:11px;
+}
+header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size:1.5rem;
+	font-weight: bold;
+	color:#fff;
+}
+section{
+	width:100%;
+	position:absolute;
+	top:50px;
+}
+
+
+/*登录框样式*/
+form .content{
+	border-bottom: 1px solid #ccc;
+	border-top:1px solid #ccc;
+	background: #fff;
+	margin-top: 10px;
+}
+form img{
+	width:20px;
+}
+form .col-xs-10{
+	padding: 0;
+}
+form label{
+	line-height: 34px;
+}
+/*.form-horizontal input{
+	border:none;
+	outline: none;
+}*//*隐藏input边框*/
+.form-horizontal .col-xs-2{
+	padding:0 5px;
+	width:40px;
+}
+.form-horizontal .user{
+	border-bottom: 1px solid #ccc;
+	padding-bottom:10px;
+	margin: 10px;
+	}
+.form-horizontal .user input{
+	outline: none;
+	border: none;
+	}
+.form-horizontal .password{
+	margin: 10px;
+	}
+.form-horizontal .password input{
+	outline: none;
+	border: none;
+	}
+
+.form-horizontal .Submit{
+	margin:20px 10px 0px 10px;
+}
+.form-horizontal .Submit input{
+	background: #F8B616;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

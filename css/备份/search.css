@@ -1,0 +1,125 @@
+
+
+html{
+	font-size: 62.5%;
+}
+html,body.container{
+	width:100%;
+	height: 100%;
+	background: #f6f5fa;
+	color: #939393;
+	overflow-x: hidden;
+}
+
+.header{width:100%;height:50px;background: #00CB4B;display: -webkit-box;padding-top:10px;position:absolute;top:0}
+.header span img{width:15px;margin: 7px 3px 0 8px;}
+.header form{-webkit-box-flex: 1;width:100%}
+.header .box{background: #fff;border-radius: 15px;}
+.box_one p{float: right;margin-right: 20px;color: #00CD4E;}
+.box_one p img{width: 20px;margin-top: 3px;}
+.header input{width:40%;border:none;outline: none; padding-bottom: 5px;}
+.header a img{width: 20px;margin: 4px 10px 0px 10px;}
+.header a:last-child{width:50px;display: block;text-align: center;line-height: 25px; color: #fff;}
+section{
+	width:100%;
+	position: absolute;
+	top:50px;
+	bottom:100px;
+}
+section a{
+	text-decoration: none;
+	color: #4E4C4D;
+}
+#banner{
+	width:100%;
+	position: relative;
+	overflow-x: hidden;
+}
+#banner ul li img{
+	width:100%;
+	display: block;
+}
+.content dl {
+	display: -webkit-box;
+	box-shadow: 2px 2px 1px #DFDFDF;
+	margin-top:10px;
+}
+.content dl dt{
+	margin-left: 10px;
+}
+.content dl dt img{
+	width:100px;
+}
+.content dl dd{
+	-webkit-box-flex: 1;
+	padding-left:10px;
+	font-size: 1.1rem;
+}
+.content dl dd p{
+	line-height: 24px;
+	font-size: 1.3rem;
+}
+.content dl dd p:nth-child(2).star{
+	float:left
+}
+.content dl dd p:nth-child(2) span{
+	float:right;
+}
+.content dl dd p span{
+	float: right;
+	margin-right:7%;
+	font-size: 1.5rem;
+}
+.content dl dd img{
+	width:10px;
+	height: 10px;
+	margin-right:2px;
+}
+#span{
+	width:60px;
+	height:30px;
+	text-align: center;
+	background: #F8B617;
+	line-height: 30px;
+	border-radius: 5px;
+	color: #fff;
+}
+.content{
+	    margin-bottom: 70px;
+}
+
+.box{
+	display: -webkit-box;-webkit-box-pack: justify;
+}
+.time{
+	margin:0 15px 5px 0;font-size: 1.5rem;
+	
+}
+
+section .sousuo{
+	width:100%;
+	padding:0px 10px;
+	border-bottom: 1px solid #ccc;
+}
+section .sousuo p{
+	line-height: 40px;
+}
+section .sousuo ul{
+	display: -webkit-box;
+}
+section .sousuo ul li{
+	-webkit-box-flex: 1;
+	margin: 10px;
+	background: #fff;
+	padding:5px;
+	text-align:center;
+	color: #939393;
+	font-size: 1.3rem;
+	font-weight: bold;
+	
+}
+
+
+
+
+

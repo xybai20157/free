@@ -259,7 +259,12 @@
 		<script type="text/javascript" src="js/swiper.min.js"></script>
 	
 		<script>
-			
+			var left=document.getElementById("left"),body=document.documentElement;
+			left.addEventListener('touchmove', function(event) {
+				event.stopPropagation();
+				console.log(1);window.event.cancelBubble = true;
+				event.cancelBubble=true;
+			});
 			/*图片轮播*/
 			var swiper = new Swiper("#banner",{
 		        pagination: '.swiper-pagination',

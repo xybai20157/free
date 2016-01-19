@@ -1,178 +1,147 @@
-html, body, .container {
-    width: 100%;
-    height: 100%;
-    background: #EEEEF0;
-    overflow-x: hidden;
-}
 
-header {
-    width: 100%;
-    height: 50px;
-    background: #00CB4B;
-    display: -webkit-box;
-    line-height: 50px;
-    padding: 0 10px;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-}
 
-header p {
-    color: #fff;
-    -webkit-box-flex: 1;
-    font-size: 1.4rem;
-    line-height: 50px;
-    text-align: center;
-    font-weight: bold;
-}
 
-header a img {
-    width: 20px;
-    margin-top: 16px;
+html{
+	font-size: 62.5%;
 }
-
+html,body,.container{
+	width:100%;
+	height:100%;
+	background: #EEEEF0;
+}
+header{
+	width:100%;
+	height: 50px;
+	background: #00CB4B;
+	display: -webkit-box;
+	line-height: 50px;
+	padding:0 10px;
+}
+header p{
+	color:#fff;
+	-webkit-box-flex: 1;
+	font-size: 1.4rem;
+	line-height: 50px;
+	text-align: center;
+}
+header a img{
+	width:20px;
+	margin-top: 16px;
+}
 section {
-    width: 100%;
-    position: absolute;
-    top: 50px;
+	width: 100%;
 }
-
-section div {
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
+section h6{
+	font-size: 1.5rem;
     color: #848484;
+    font-weight: bold;
     background: #fff;
+    padding:15px;
+    border-bottom: 1px solid #ccc;
+}
+section h6 input{
+	border: none;
+	outline: none;
+}
+section h6:last-child input{
+	width:80px;
+	border: none;
+	outline: none;
+}
+section h6:last-child span{
+	float: right;
+	font-weight: normal;
+	padding:0 30px;
+	background: url(../icon/insert.png) no-repeat right;
+	background-size: 17px;
+	border-left:2px solid #ccc;
+	position: relative;
+}
+section h6:last-child span input{
+position: absolute;
+right: 0px;
+opacity: 0;
+}
+.p{
+	padding:8px 10px;
+	line-height:24px;
+}
+.content{
+	width:100%;
+	background: #fff;
+}
+.list{
+	width:90%;
+	margin:0 auto;
+	margin-top: 10px;
+	display: -webkit-box;
+}
+.list p{
+	width:100%;
+}
+.list p:first-child{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	width:40px;
+	font-size: 1.5rem;
+}
+.list p textarea{
+	display: inline-block;
+	width:85%;
+	height:108px;
+}.up_btn{
+	width:90%;
+	margin: 0 auto;
+	display: -webkit-box;
+}
+.up_btn img{
+width:43px;
+height:43px;
+display: block;
+margin-left:40px;
+}
+.up_btn input{
+	width:43px;
+	height:43px;
+	opacity: 0;
+	position: relative;
+}
+.up_btn a{
+	width:43px;
+	height:43px;
+	display: block;
+	margin-left: 5px;
+	border:1px dashed #ccc;
+	background: url(../icon/insert.png) no-repeat center center;
+	background-size: 40px;
+	
+}
+.up_btn p{
+	display: block;
+	padding:10px;
+	background: #00CB4B;
+	color:#fff;
+	-webkit-box-pack: end;
+	margin-left: 30px;
+	border-radius: 5px;
 }
 
-section div input {
-    border: none;
-    background: none;
-    outline: none;
+.btn{
+	width:90%;
+	margin:0 auto;
+}
+.btn button{
+	width:100%;
+	padding:10px 0;
+	border:none;
+	border-radius: 5px;
+	margin-top:5px;
+	color: #fff;
+	font-size: 1.5rem;
 }
 
-.two p input {
-    width: 60%;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-section span {
-    font-size: 14px;
-}
-
-.two {
-    display: -webkit-box;
-    -webkit-box-pack: justify;
-}
-
-.two p {
-    position: relative;
-    background: url(../icon/添加.png) no-repeat right;
-    background-size: 15px;
-    padding: 0px 20px;
-    border-left: 2px solid #ccc;
-}
-
-.two p input {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 0px;
-    opacity: 0;
-}
-
-section div:nth-child(3) {
-    font-weight: normal;
-    background: none;
-}
-
-section .txt {
-    width: 100%;
-    display: -webkit-box;
-    padding: 10px 15px;
-
-}
-
-section .txt p {
-    width: 30px;
-    font-size: 14px;
-}
-
-section .txt .area {
-    width: 100%;
-    display: block;
-    -webkit-box-flex: 1;
-    padding: 0;
-    border: none;
-}
-
-section .txt .area .img {
-    width: 46px;
-    height: 46px;
-    position: relative;
-    float: left;
-    padding: 0;
-    line-height: 0;
-    font-size: 0;
-    vertical-align:middle;
-}
-
-section .txt .area img {
-    width: 46px;
-}
-
-section .txt .area p {
-    width: 46px;
-    position: absolute;
-    left: 90px;
-    display: inline-block;
-    background: url(../icon/添加.png) no-repeat center center;
-    background-size: 40px;
-}
-
-section .txt input {
-    width: 46px;
-    height: 46px;
-    opacity: 0;
-}
-
-section .txt button {
-    float: right;
-    margin-top: 5px;
-    padding: 10px;
-    background: #00cd4f;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    color: #fff;
-}
-section .error{
-    color: #fb5f5b;
-    font-size: 12px;
-    display: none;
-}
-section .txt button a {
-    color: #fff
-}
-
-section > div:last-child {
-    border: none;
-}
-
-.btn {
-    width: 90%;
-    margin: 10px auto;
-    border: none;
-}
-.btn input{
-    width: 100%;
-    padding: 15px 0;
-    border: none;
-    border-radius: 5px;
-    background: #f8b616;
-    font-size: 16px;
-    color: #fff;
+.btn2{
+	background: #f8b616;
 }
 
 

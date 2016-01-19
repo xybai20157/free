@@ -17,28 +17,31 @@ html {
 }
 body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: "微软雅黑";
+ 
 }
-.header {
-  width: 100%;
-  height: 50px;
-  background: #00CD4E;
-  display: -webkit-box;
-  line-height: 50px;
-  position: fixed;
-  top:0;
-  padding: 0 10px;
+header{
+	 width: 100%;
+	  height: 50px;
+	  background: #00CD4E;
+	  display: -webkit-box; 
+	  line-height: 50px;
+	  padding:0 10px;
+	  line-height:50px;
 }
-.header p{
+header p{
 	-webkit-box-flex: 1;
 	text-align: center;
-	color: #fff;
+	font-size: 15px;
+	color:#fff;
+	line-height: 50px;
 	font-weight: bold;
-	font-size: 1.5rem;
 }
-.header span img{
+header a img{
 	width:20px;
-	margin-top: 16px;
+	margin-top:14px;
+}
+header a:last-child img{
+	margin-top:22px;
 }
 .main {
   width: 100%;
@@ -110,10 +113,6 @@ body {
 	margin:0 auto;
 	display: -webkit-box;
 }
-.content .li img{
-	width:20px;
-	height:23px;
-}
 .content ul a:last-child{
 	border:none;
 }
@@ -123,18 +122,19 @@ body {
 }
 .content ul li span img{
 	width:22px;
-	margin:22px 3px 0 0;
+	margin:13px 3px 0 0;
 }
+
 .content ul li{
+	
 	font-size: 1.5rem;
 	color:#717071;
 }
+
 .content ul li p{
-	
+	padding:15px 0;
 	-webkit-box-flex: 1;
-	background: url(../icon/箭头-向右.png) no-repeat right;background-size: 10px;
-  height: 60px;
-  line-height: 60px;
+	background: url(../icon/boultRight.png) no-repeat right;background-size: 10px;
 }
 .content ul a{
     text-decoration: none;
@@ -142,4 +142,5 @@ body {
     margin: 0 auto;
     display: block;
     border-bottom: 1px solid #ccc;
+
 }

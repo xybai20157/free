@@ -1,0 +1,117 @@
+
+html{
+	font-size: 62.5%;
+}
+body,html.container{
+	width:100%;
+	height:100%;
+	background: #EEEEEF;
+}
+.header{
+	width:100%;
+	height:50px;
+	background:#00cd4e ;
+	display: -webkit-box;
+	line-height: 50px;
+	padding: 0 10px;
+	color: #fff;
+}
+
+.header p{
+	-webkit-box-flex: 1;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+.header span img{
+	width:20px; 
+}
+.header span img:first-child{
+	margin-top:16px;
+}
+.nav {
+	width: 100%;
+	height:45px;
+	color: #747474;
+	background: #eeeef0;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	line-height: 45px;
+	padding:0 20px;
+	font-size: 14px;
+}
+.nav p:last-child{
+	padding-right:15px;
+	background: url(../icon/箭头-向右.png) no-repeat right;
+	background-size: 8px;
+}
+section{
+	width:100%;
+	background: #fff;
+}
+section dl{
+	width:90%;
+	margin: 0 auto;
+	padding:10px 0;
+	display: -webkit-box;
+	border-bottom: 1px solid #ccc;
+	
+}
+section dl dt{
+	width:82px;
+	height:82px;
+	margin-right:10px;
+}
+section dl dt img{
+	width:100%;
+	height:100%;
+	display: block;
+}
+section dl dd{
+	-webkit-box-flex: 1;
+	font-size: 1.1rem;
+	color: #8c8b8c;
+	line-height: 21px;
+}
+section dl dd p:first-child{
+	font-size: 1.4rem;
+	font-weight: bold;
+	
+}
+section dl dd p span{
+	float: right;
+}
+section dl dd p img{
+	width:13px;
+}
+section dl dd p:nth-child(2) span{
+	font-size: 1.4rem;
+}
+/*.section dl:last-child{
+	border: none;
+}*/
+section  a{
+	text-decoration: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

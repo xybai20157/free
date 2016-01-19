@@ -1,17 +1,17 @@
-html{font-size: 62.5%;}
-html,body.container{
+body,html.container{
 	width:100%;
 	height:100%;
 	background: #eeeeef;
 }
-
+html{font-size: 62.5%;}
 .header {
   width: 100%;
   height: 50px;
   background: #00CD4E;
   display: -webkit-box;
   line-height: 50px;
-  padding:0px 10px;
+  padding:0 10px;
+  line-height:50px;
 }
 .header p{
 	-webkit-box-flex: 1;
@@ -21,12 +21,16 @@ html,body.container{
 	font-size: 1.5rem;
 }
 
-.header span img{
+.header a img{
 	width:20px;
-	margin-top: 16px;
+	margin-top:14px;
 }
-
-
+.header a:last-child img{
+	margin-top:23px;
+}
+.header span:first-child{
+	padding-left: 10px;
+}
 section {
 	width: 100%;
 	background: #fff;
@@ -37,14 +41,12 @@ section ul{
 	margin: 0 auto;
 	
 }
+
 section ul li{
 	display: -webkit-box;
-	padding:0 0px;
-	height:62px;
+	padding:15px 0px;
 	background: #fff;
-	color: #868586;
-	line-height: 62px;
-	font-size: 1.5rem;
+	color: #7c7b7c;
 	border-bottom: 1px solid #ccc;
 }
 section ul li input{
@@ -56,64 +58,28 @@ section ul li input{
 	outline: none;
 	text-align:right;
 	padding-right:20px;
-	line-height: 62px;
 }
 section ul li:last-child{
 	border:none
 }
-
+section ul li p{
+	width:100px;
+	height:20px;
+}
 .btn p{
-	width:100%;
 	background:#fff;
-	padding:0 10px;
-	height:62px;
-	color: #868586;
-	line-height: 62px;
+	padding: 15px 10px;
 	margin-top:20px;
-	font-size: 1.5rem;
 	-webkit-box-flex: 1;
-	
+	width:100%;
 }
 .btn a{
 	text-decoration: none;
 	color: #7c7b7c;
 }
-
-.btn span {
+.btn span img {
 	float: right;
 	width:10px;
-	margin-top: 5px;
-	line-height: 62px;
-}
-
-#pop{
-	width:70%;
-	height:140px;
-	background: #fff;
-	border-radius: 20px;
-	position:absolute;
-	top:30%;
-	left:50%;
-	margin-left:-35%;
-	border:1px solid #DCDCDC;
-	display: none;
-}
-#pop button{
-	position: absolute;
-	bottom: 0;
-	width:100%;
-	padding:10px 0;
-	border-radius: 0 0 20px 20px;
-	border:none;
-	outline: none;
-	color: #2fa7dc;
-	background: #fff;
-	border-top:1px solid #C9C9CB
-}
-#pop #pop_text{
-	text-align: center;
-	line-height: 100px;
-	color: #221914;
 }
 
 

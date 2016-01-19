@@ -43,7 +43,7 @@ body,html.container{
 }
 .nav p:last-child{
 	padding-right:15px;
-	background: url(../icon/箭头-向右.png) no-repeat right;
+	background: url(../icon/boultRight.png) no-repeat right;
 	background-size: 8px;
 }
 

@@ -1,0 +1,93 @@
+@font-face {
+font-family:Myfont;
+font-style:normal;
+font-weight: bold;
+src: url(../font/mui.ttf) format("truetype");
+}
+
+body,html.container{
+	width:100%;
+	height:100%;
+	background: #eeeeef;
+}
+header{
+	width:100%;
+	height:50px;
+	display: -webkit-box;
+	color: #fff;
+	background: #00CC4E;
+	line-height: 50px;
+	position: fixed;
+	top:0;	
+	padding:0px 10px;
+}
+header img{
+	width:20px;
+	margin-top: 16px;
+	
+}
+
+section{
+	width:100%;
+	position: absolute;
+	top:50px;
+}
+
+ul{
+	margin-top:25%;
+}
+ul li{
+	text-align: center;
+	font-weight: bold;
+	line-height:1.5em;
+	color: #aaa9aa;
+}
+
+ul li:first-child img{
+	width:40px;
+	margin-bottom: 10px;
+}
+ul .li{
+	font-size: 2.0rem;
+}
+ul li a{
+	text-decoration: none;
+	color:#aaa9aa;
+}
+.p{
+	width:90%;
+	margin:0 auto;
+	font-size: 1.0rem;
+	margin-top:100px;
+}
+.btn{
+	width:90%;
+	margin:0 auto;
+}
+.btn button{
+	width:100%;
+	padding:10px 0;
+	border:none;
+	border-radius: 5px;
+	margin-top:78px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.btn2{
+	background: #f8b616;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

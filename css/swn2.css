@@ -16,9 +16,6 @@ header{
 	display: -webkit-box;
 	padding: 0 10px;
 	line-height: 50px;
-	position:fixed;
-	top:0;
-	z-index: 99;
 }
 header a img{
 	width:20px;
@@ -68,8 +65,6 @@ nav ul li:first-child{
 }
 section{
 	width:100%;
-	position: absolute;
-	top:50px;
 }
 section ul li{
 	margin:10px 10px;

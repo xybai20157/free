@@ -1,0 +1,163 @@
+@import url("reset.css");
+.box {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html{
+  font-size: 62.5%;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.a {
+  position: absolute;
+}
+.r {
+  position: relative;
+}
+.wrapper_3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  background: #EEEEF0;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #00CD4E;
+  display: -webkit-box;
+  padding:0 10px;
+  line-height: 50px;
+  position:fixed;
+	top:0;
+	
+}
+header p{
+	line-height: 50px;
+	-webkit-box-flex: 1;
+	text-align: center;
+	color:#fff;
+	font-size: 1.5rem;
+	font-weight: bold;
+
+}
+header a img{
+	width:20px;
+	margin-top: 12px;
+}
+header a:last-child img{
+	width:20px;
+	margin-top: 23px;
+}
+section {
+	position: absolute;
+	top:50px;
+	bottom:56px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.pot_3 {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #ccc;
+  padding: 10px;
+  background: #fff;
+  position: relative;
+}
+.pot_3 a {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.pot_3 a img {
+  width: 50px;
+  height: 50px;
+  background-size: 100% auto;
+}
+.pot_3 h1 {
+  font-size: 14px;
+  float: right;
+  line-height: 20px;
+  margin-right: 120px;
+}
+.pot_3 h1 small {
+  margin-left: 10px;
+  color: #00CD4E;
+}
+.pot_3 h1 b {
+  color: #DADADC;
+  font-weight: 400;
+}
+.pot_3 p {
+  float: right;
+  margin-right: 130px;
+}
+.pot_3 span {
+  position: absolute;
+  right: 23px;
+  top: 25px;
+}
+.pot_3 span img {
+  width: 10px;
+  height: 20px;
+}
+.content{
+	width:100%;
+	margin:0 auto;
+	background:#fff;
+	margin-top:20px;
+}
+.content ul{
+	border-bottom: 1px solid #ccc;
+}
+.content ul li{
+	margin:0 auto;
+	display: -webkit-box;
+	border-bottom: 1px solid #ccc;
+}
+
+.content ul a{
+	  text-decoration: none;
+    width: 91%;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.content ul a:last-child{border:none}
+.content ul li span img{
+	width:22px;
+	padding-top:5px;
+}
+.content ul li {
+	padding:10px 0;
+	font-size: 1.5rem;
+	color:#717071;
+}
+.content ul li p{
+padding:10px 0 10px 5px;
+	-webkit-box-flex: 1;
+	background: url(../icon/boultRight.png) no-repeat right;background-size: 10px;
+}
+.content ul li:last-child{
+	border:none
+}

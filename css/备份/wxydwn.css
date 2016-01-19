@@ -1,0 +1,160 @@
+html, body, .container {
+    width: 100%;
+    height: 100%;
+    background: #EEEEF0;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+section div {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    color: #848484;
+    background: #fff;
+}
+
+section div input {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.two p input {
+    width: 60%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+section span {
+    font-size: 14px;
+}
+
+.two {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+.two p {
+    position: relative;
+    background: url(../icon/添加.png) no-repeat right;
+    background-size: 15px;
+    padding: 0px 20px;
+    border-left: 2px solid #ccc;
+}
+
+.two p input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+
+section div:nth-child(3) {
+    font-weight: normal;
+    background: none;
+}
+
+section .txt {
+    width: 100%;
+    display: -webkit-box;
+    padding: 10px 15px;
+
+}
+
+section .txt p {
+    width: 30px;
+    font-size: 14px;
+}
+
+section .txt .area {
+    width: 100%;
+    display: block;
+    -webkit-box-flex: 1;
+    padding: 0;
+    border: none;
+}
+
+section .txt .area .img {
+    width: 46px;
+    height: 46px;
+    position: relative;
+    float: left;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+    vertical-align:middle;
+}
+
+section .txt .area img {
+    width: 46px;
+}
+
+section .txt .area p {
+    width: 46px;
+    position: absolute;
+    left: 90px;
+    display: inline-block;
+    background: url(../icon/添加.png) no-repeat center center;
+    background-size: 40px;
+}
+
+section .txt input {
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+}
+
+section .txt button {
+    float: right;
+    margin-top: 5px;
+    padding: 10px;
+    background: #00cd4f;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+section .error{
+    color: #843534;
+    font-size: 12px;
+    display: none;
+    float: right;
+}
+section .error2{
+    color: #843534;
+    font-size: 12px;
+    display: none;
+    text-align: right;
+    padding: 5px;
+    width: 100%;
+    border: none;
+}
+section .txt button a {
+    color: #fff
+}
+
+section > div:last-child {
+    border: none;
+}
+
+.btn {
+    width: 90%;
+    margin: 10px auto;
+    border: none;
+}
+.btn input{
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background: #f8b616;
+    font-size: 16px;
+    color: #fff;
+}

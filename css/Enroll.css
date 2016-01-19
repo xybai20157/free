@@ -20,7 +20,8 @@ header{
 	z-index: 99;
 }
 header a img{
-	width:11px;
+	width:20px;
+	margin-top: 14px;
 }
 header p{
 	-webkit-box-flex: 1;
@@ -29,67 +30,85 @@ header p{
 	font-weight: bold;
 	color:#fff;
 }
-section{
+section {
 	width:100%;
 	position:absolute;
 	top:50px;
 }
 
-
-/*登录框样式*/
-form .content{
-	border-bottom: 1px solid #ccc;
-	border-top:1px solid #ccc;
+.content{
 	background: #fff;
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	margin-top: 10px;
-}
-form img{
-	width:20px;
-}
-form .col-xs-10{
-	padding: 0;
-}
-form label{
-	line-height: 34px;
 }
 /*.form-horizontal input{
 	border:none;
 	outline: none;
 }*//*隐藏input边框*/
 .form-horizontal .col-xs-2{
-	padding:0 5px;
-	width:40px;
+	width:54px;
+	display: block;
+	color:#00CC4E;
+	padding: 0;
 }
-.form-horizontal .user{
-	border-bottom: 1px solid #ccc;
-	padding-bottom:10px;
-	margin: 10px;
-	}
-.form-horizontal .user input{
-	outline: none;
-	border: none;
-	}
-.form-horizontal .password{
-	margin: 10px;
-	}
-.form-horizontal .password input{
-	outline: none;
-	border: none;
-	}
 
+.form-horizontal button{
+	padding:5px;
+	background: #00CC4E;
+	display: block;
+	border-radius: 5px;
+	width: 80px;
+	color:#fff;
+	
+}
+.form-horizontal .col-xs-3{
+	border-radius: 5px;
+	padding: 0;
+}
+
+.form-horizontal .btn button{
+	padding:5px;
+	border:none;
+	outline:none;
+	background: #00CB4B;
+	border-radius: 5px;
+	color:#fff;
+	
+}
+.form-horizontal .phone{
+	margin:10px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 10px 0;
+}
+
+.form-horizontal .provingCode{
+	margin:10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.form-horizontal .password{
+	margin:10px;
+	
+}
+.form-horizontal .form-group .col-xs-6{
+	padding: 0;
+}
 .form-horizontal .Submit{
 	margin:20px 10px 0px 10px;
 }
-.form-horizontal .Submit input{
+.form-horizontal .Submit button{
 	background: #F8B616;
 	color: #fff;
 	font-weight: bold;
 }
-
-
-
-
-
+.form-horizontal label{
+	line-height: 30px;
+	margin-right: 5px;
+}
+#errMsg{
+	color:red; margin-left: 20%;
+}
 
 
 

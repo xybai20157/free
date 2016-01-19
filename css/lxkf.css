@@ -1,49 +1,37 @@
-
-
-
-html{
-	font-size: 62.5%;
-}
 html,body.container{
 	width:100%;
 	height:100%;
 }
-header{
-	width:100%;
-	height:50px;
-	background: #00CB4B;
-	line-height:50px;
-	padding:0 10px;
-	display: -webkit-box;
-}
-header p{
-	-webkit-box-flex: 1;
-	text-align: center;
-	color: #fff;
-	font-size: 1.4rem;
-}
-header a img{
-	width:20px;
-	margin-top:16px;
-}
+
+
+
 section {
-	width:100%;
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
 }
-section p{
+section>p{
 	width:130px;
 	margin: 0 auto;
 	padding:5px 0;
-	text-align: center;
-	font-size: 1.1rem;
-	background: rgba(0,0,0,0.2);
-	border-radius: 15px;
 	margin-top: 10px;
+	background: #d6d6d6;
+	color: #fff;
+	text-align: center;
+	border-radius: 15px;
+}
+section dl dd p{
+	text-align: left;
+	color: #494544;
+	font-size: 13px;
 }
 
 section dl{
 	width:90%;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 15px;
 	display: -webkit-box;
 }
 section dl dt{
@@ -56,69 +44,41 @@ section dl dt img{
  section dl dd{
  	-webkit-box-flex: 1;
  }
+section  dl dd p{
+	position: relative;
+	border-radius: 5px;
+	padding: 15px;
+	margin-left: 3%;
+}
 section  dl:nth-child(2) dd p{
-	
-	width:90%;
-	-webkit-border-image:url(../icon/90后信用-31.png)41 25 47 31/13px;
-}
-
-section dl:nth-child(3) dd p{
-	width:90%;
-	-webkit-border-image:url(../icon/90后信用-32.png)41 25 47 31/13px;
-}
-
-.footer>div{
-	width:100%;
-	height:50px;
-	left:100%;
-	position:fixed;
-	bottom:0px;
-	-webkit-transition:transform .5s;
-	border-top:1px solid #ccc;
-	}
-.footer>div.current{
-	transform:translate(-100%,0);
-	}
-.footer{
-	width:100%;
-	height:50px;
-	position:fixed;
-	bottom:0;
-	border-top:1px solid #ccc;
-}  
-
-.footer .one{
-	position:fixed;
-	bottom:0;
-	width:100%;
-	height: 50px;
+	float: left;
+	margin-left: 20px;
 	background: #fff;
-	display: -webkit-box;
-	display: -moz-box;
-	padding:5px 20px 0 20px;
-	z-index: 99;
+	border: 1px solid #ddd;
+	margin-right: 20px;
+
 }
-.footer .one img{
-	width:30px;
+section  dl:nth-child(2) dd p:after{
+	left: -10px;
+	background: url("../icon/90creditService.png") no-repeat;
+	background-size: 100%;
 }
-.footer .one .center{
-	-webkit-box-flex: 1;
+section dl:nth-child(3) dd p{
+	background: #00cc4e;
+	float: right;
+	margin-right: 20px;
+	margin-left: 20px;
 }
-.footer .one .center input{
-	width: 100%;
-	height:30px;
-	border:none;
-	border-bottom: 1px solid #ccc;
-}
-.footer .one .right{
-	width:30px;
-	background: url(../icon/添加.png) no-repeat;
-	background-size: 30px;
-}
-.footer .one .right input{
-	opacity: 0;
-}
-.footer .one .center img{
+section dl dd p:after{
 	position: absolute;
-	right:60px;
+	top: 15px;
+	display: block;
+	width: 10px;
+	height: 16px;
+	content: "";
+}
+section dl:nth-child(3) dd p:after{
+	right: -10px;
+	background: url("../icon/90creditUser.png") no-repeat;
+	background-size: 100%;
 }
